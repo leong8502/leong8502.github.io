@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHECKOUT of TOOL STEADY WEBSTORE</title>
+    <! -- title name -->
+        <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style2.css">
+</head>
+
+<style>
+    * {
+        text-transform: capitalize;
+        transition: all .2s linear;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 25px;
+        min-height: 90vh;
+        background: linear-gradient(90deg, #6a6e6c 60%, #151616 40.1%);
+        background-image: url("IMG/Pay/bg.png");
+        background-size: cover;
+        background-position: top 30% right 0;
+    }
+
+    .container form {
+        padding: 20px;
+        width: 700px;
+        background: #fff;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+    }
+
+    .container form .row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .container form .row .col {
+        flex: 1 1 250px;
+    }
+
+    .container form .row .col .title {
+        font-size: 20px;
+        color: #333;
+        padding-bottom: 5px;
+        text-transform: uppercase;
+    }
+
+    .container form .row .col .inputBox {
+        margin: 15px 0;
+    }
+
+    .container form .row .col .inputBox span {
+        margin-bottom: 10px;
+        display: block;
+    }
+
+    .container form .row .col .inputBox input {
+        width: 100%;
+        border: 1px solid #ccc;
+        padding: 10px 15px;
+        font-size: 15px;
+        text-transform: none;
+    }
+
+    .container form .row .col .inputBox input:focus {
+        border: 1px solid #000;
+    }
+
+    .container form .row .col .flex {
+        display: flex;
+        gap: 15px;
+    }
+
+    .container form .row .col .flex .inputBox {
+        margin-top: 5px;
+    }
+
+    .container form .row .col .inputBox img {
+        height: 34px;
+        margin-top: 5px;
+        filter: drop-shadow(0 0 1px #000);
+    }
+
+    .container form .submit-btn {
+        width: 100%;
+        padding: 12px;
+        font-size: 17px;
+        background: #27ae60;
+        color: #fff;
+        margin-top: 5px;
+        cursor: pointer;
+        box-sizing: border-box;
+        outline: none;
+        border: none;
+    }
+
+    .container form .submit-btn:hover {
+        background: #2ecc71;
+    }
+</style>
+
+<body>
+
+    <section id="header">
+        <a href="index.html"><img src="IMG/logop.jpeg" class="logo"></a>
+
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Account</a></li>
+                <li id="shopping-bag"><a class="active" href="cart.html"><i class="fa fa-shopping-bag"
+                            aria-hidden="true"></i></a></li>
+                <a href="#" id="close"><i class="far fa-times"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="fa fa-shopping-bag" aria-hidden="true"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+
+    <section id="payment-form">
+        <div class="container">
+
+            <form action="">
+
+                <div class="row">
+
+                    <div class="col">
+
+                        <h3 class="title">billing address</h3>
+
+                        <div class="inputBox">
+                            <span>full name :</span>
+                            <input type="text" placeholder="Edward">
+                        </div>
+                        <div class="inputBox">
+                            <span>email :</span>
+                            <input type="email" placeholder="example@example.com">
+                        </div>
+                        <div class="inputBox">
+                            <span>address :</span>
+                            <input type="text" placeholder="room - street - locality">
+                        </div>
+                        <div class="inputBox">
+                            <span>city :</span>
+                            <input type="text" placeholder="mumbai">
+                        </div>
+
+                        <div class="flex">
+                            <div class="inputBox">
+                                <span>state :</span>
+                                <input type="text" placeholder="india">
+                            </div>
+                            <div class="inputBox">
+                                <span>post code :</span>
+                                <input type="text" placeholder="123 456">
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col">
+
+                        <h3 class="title">payment</h3>
+
+                        <div class="inputBox">
+                            <span>cards accepted :</span>
+                            <img src="IMG/Pay/pay.png" alt="">
+                        </div>
+                        <div class="inputBox">
+                            <span>name on card :</span>
+                            <input type="text" placeholder="mr. Edward">
+                        </div>
+                        <div class="inputBox">
+                            <span>credit card number :</span>
+                            <input type="number" placeholder="1111-2222-3333-4444">
+                        </div>
+                        <div class="inputBox">
+                            <span>exp month :</span>
+                            <input type="text" placeholder="january">
+                        </div>
+
+                        <div class="flex">
+                            <div class="inputBox">
+                                <span>exp year :</span>
+                                <input type="number" placeholder="2023">
+                            </div>
+                            <div class="inputBox">
+                                <span>CVV :</span>
+                                <input type="text" placeholder="1234">
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <input type="submit" value="proceed to checkout" class="submit-btn">
+
+            </form>
+
+        </div>
+    </section>
+
+    <section id="newsletter" class="section-p1 section-m1">
+        <div class="newstext">
+            <h4>Sign Up For Newsletter</h4>
+            <p>Get E-mail updates about our latest shop and <span>special offers.</span></p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Your email address">
+            <a href="register.html"><button class="normal">Sign Up</button></a>
+        </div>
+    </section>
+
+    <footer class="section-p1">
+        <div class="col">
+            <h4>Contact</h4>
+            <p><strong>Address:</strong> 878 Edward Road, Street 69, Kuala Lumpur</p>
+            <p><strong>Phone:</strong> +60 1147899987/(+60 12 6969877)</p>
+            <p><strong>Hours:</strong> 10:00 - 18:00 Mon - Sat</p>
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <h4>About</h4>
+            <a href="about.html">About us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="login.html">Sign in</a>
+            <a href="cart.html">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+        </div>
+
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From Google Play Store</p>
+            <div class="row">
+                <img src="IMG/Pay/play.jpg" alt="">
+            </div>
+            <p>Secured Payment Gateways</p>
+            <img src="IMG/Pay/pay.png" alt="">
+        </div>
+
+        <div class="copyright">
+            <p>© 2021, Tech2 etc - HTML CSS Ecommerce Template</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
