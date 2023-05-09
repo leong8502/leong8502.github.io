@@ -17,21 +17,21 @@
 <body>
 
     <section id="header">
-        <a href="index.html"><img src="IMG/logop.jpeg" class="logo"></a>
+        <a href="index.php"><img src="IMG/logop.jpeg" class="logo"></a>
 
         <div>
             <ul id="navbar">
-                <li><a href="index.html">Home</a></li>
-                <li><a class="active" href="shop.html">Shop</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="login.html">Account</a></li>
-                <li id="shopping-bag"><a href="cart.html"><i class="fa fa-shopping-bag" aria-hidden="true"></i></a></li>
+                <li><a href="index.php">Home</a></li>
+                <li><a class="active" href="shop.php">Shop</a></li>
+                <li><a href="about.php">About</a></li>
+                <li><a href="contact.php">Contact</a></li>
+                <li><a href="login.php">Account</a></li>
+                <li id="shopping-bag"><a href="cart.php"><i class="fa fa-shopping-bag" aria-hidden="true"></i></a></li>
                 <a href="#" id="close"><i class="far fa-times"></i></a>
             </ul>
         </div>
         <div id="mobile">
-            <a href="cart.html"><i class="fa fa-shopping-bag" aria-hidden="true"></i></a>
+            <a href="cart.php"><i class="fa fa-shopping-bag" aria-hidden="true"></i></a>
             <i id="bar" class="fas fa-outdent"></i>
         </div>
     </section>
@@ -43,54 +43,32 @@
 
     <section id="product1" class="section-p1">
         <div class="pro-container">
-            <div class="pro" onclick="window.location.href='sproduct17.html';">
-                <img src="IMG/Products/p17.jpeg" alt="Comming soon">
-                <div class="des">
-                    <span>Cooler Master</span>
-                    <h5>COOLER MASTER MASTERLIQUID ML240L V2 ARGB CPU COOLER (BLACK)</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>RM248.00</h4>
-                </div>
-                <a href="#"><i class="fa fa-shopping-cart cart" aria-hidden="true"></i></a>
+
+        <?php include('get_products.php'); ?>
+
+        <?php foreach($products4 as $product4) { ?>
+
+    <div class="pro">
+        <a href="<?php echo 'sproduct1.php?id='.$product4['product_id']; ?>">
+        <img src="IMG/Products/<?php echo $product4['product_image']; ?>" alt="Comming soon">
+        <div class="des">
+            <span><?php echo $product4['product_brand']; ?></span>
+            <h5><?php echo $product4['product_name']; ?></h5>
+            <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
             </div>
-            <div class="pro" onclick="window.location.href='sproduct18.html';">
-                <img src="IMG/Products/p18.jpeg" alt="Comming soon">
-                <div class="des">
-                    <span>Alienware</span>
-                    <h5>ALIENWARE WIRED GAMING MOUSE</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>RM147.00</h4>
-                </div>
-                <a href="#"><i class="fa fa-shopping-cart cart" aria-hidden="true"></i></a>
-            </div>
-            <div class="pro" onclick="window.location.href='sproduct19.html';">
-                <img src="IMG/Products/p19.jpeg" alt="Comming soon">
-                <div class="des">
-                    <span>Razer</span>
-                    <h5>Razer Blackwidow V3 Pro Wireless Mechanical Gaming Keyboard</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>RM832.40</h4>
-                </div>
-                <a href="#"><i class="fa fa-shopping-cart cart" aria-hidden="true"></i></a>
-            </div>
+            <h4>RM<?php echo $product4['product_price']; ?></h4>
+        </div>
+        <a href="<?php echo 'sproduct1.php?id='.$product2['product_id']; ?>"><i class="fa fa-shopping-cart cart" aria-hidden="true"></i></a>
+        </div>
+        </a>
+
+        <?php }  ?>
+
             <div class="pro">
                 <img src="IMG/Products/cms.jpg" alt="Comming soon">
                 <div class="des">
@@ -304,8 +282,8 @@
     </section>
 
     <section id="pagination" class="section-p1">
-        <a href="shop.html">1</a>
-        <a href="shop2.html">2</a>
+        <a href="shop.php">1</a>
+        <a href="shop2.php">2</a>
         <a href="#">...</i></a>
     </section>
 
@@ -316,7 +294,7 @@
         </div>
         <div class="form">
             <input type="text" placeholder="Your email address">
-            <a href="register.html"><button class="normal">Sign Up</button></a>
+            <a href="register.php"><button class="normal">Sign Up</button></a>
         </div>
     </section>
 
@@ -340,17 +318,17 @@
 
         <div class="col">
             <h4>About</h4>
-            <a href="about.html">About us</a>
+            <a href="about.php">About us</a>
             <a href="#">Delivery Information</a>
             <a href="#">Privacy Policy</a>
             <a href="#">Terms & Conditions</a>
-            <a href="contact.html">Contact Us</a>
+            <a href="contact.php">Contact Us</a>
         </div>
 
         <div class="col">
             <h4>My Account</h4>
-            <a href="login.html">Sign in</a>
-            <a href="cart.html">View Cart</a>
+            <a href="login.php">Sign in</a>
+            <a href="cart.php">View Cart</a>
             <a href="#">My Wishlist</a>
             <a href="#">Track My Order</a>
             <a href="#">Help</a>

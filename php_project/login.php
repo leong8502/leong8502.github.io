@@ -9,7 +9,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Project/PHP/PHPProject.php to edi
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register for TOOL STEADY WEBSTORE</title>
+    <title>Login now for TOOL STEADY WEBSTORE</title>
     <! -- title name -->
         <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
@@ -39,7 +39,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Project/PHP/PHPProject.php to edi
             .box {
                 position: relative;
                 width: 450px;
-                height: 520px;
+                height: 430px;
                 background: #1c1c1c;
                 opacity: 0.93;
                 border-radius: 8px;
@@ -183,7 +183,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Project/PHP/PHPProject.php to edi
                 border-radius: 4px;
                 font-weight: 600;
                 width: 120px;
-                margin-top: 35px;
+                margin-top: 15px;
                 margin-left: 120px;
                 color: white;
             }
@@ -216,21 +216,21 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Project/PHP/PHPProject.php to edi
 <body>
 
     <section id="header">
-        <a href="index.html"><img src="IMG/logop.jpeg" class="logo"></a>
+        <a href="index.php"><img src="IMG/logop.jpeg" class="logo"></a>
 
         <div>
             <ul id="navbar">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="shop.html">Shop</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a class="active" href="login.html">Account</a></li>
-                <li id="shopping-bag"><a href="cart.html"><i class="fa fa-shopping-bag" aria-hidden="true"></i></a></li>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="shop.php">Shop</a></li>
+                <li><a href="about.php">About</a></li>
+                <li><a href="contact.php">Contact</a></li>
+                <li><a class="active" href="login.php">Account</a></li>
+                <li id="shopping-bag"><a href="cart.php"><i class="fa fa-shopping-bag" aria-hidden="true"></i></a></li>
                 <a href="#" id="close"><i class="far fa-times"></i></a>
             </ul>
         </div>
         <div id="mobile">
-            <a href="cart.html"><i class="fa fa-shopping-bag" aria-hidden="true"></i></a>
+            <a href="cart.php"><i class="fa fa-shopping-bag" aria-hidden="true"></i></a>
             <i id="bar" class="fas fa-outdent"></i>
         </div>
     </section>
@@ -238,12 +238,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Project/PHP/PHPProject.php to edi
     <section id="login-page">
         <div class="box">
             <form>
-                <h2>Sign Up</h2><br>
-                <div class="inputBox">
-                    <input type="password" required="required">
-                    <span>Username</span>
-                    <i></i>
-                </div>
+                <h2>Sign In</h2><br>
                 <div class="inputBox">
                     <input type="text" required="required">
                     <span>Email</span>
@@ -254,7 +249,11 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Project/PHP/PHPProject.php to edi
                     <span>Password</span>
                     <i></i>
                 </div>
-                <input type="submit" value="Sign up">
+                <div class="links">
+                    <a href="#"></a>
+                    <a href="register.php">Register</a>
+                </div>
+                <input type="submit" value="Login">
 
             </form>
         </div>
@@ -267,7 +266,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Project/PHP/PHPProject.php to edi
         </div>
         <div class="form">
             <input type="text" placeholder="Your email address">
-            <a href="register.html"><button class="normal">Sign Up</button></a>
+            <a href="register.php"><button class="normal">Sign Up</button></a>
         </div>
     </section>
 
@@ -291,17 +290,17 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Project/PHP/PHPProject.php to edi
 
         <div class="col">
             <h4>About</h4>
-            <a href="about.html">About us</a>
+            <a href="about.php">About us</a>
             <a href="#">Delivery Information</a>
             <a href="#">Privacy Policy</a>
             <a href="#">Terms & Conditions</a>
-            <a href="contact.html">Contact Us</a>
+            <a href="contact.php">Contact Us</a>
         </div>
 
         <div class="col">
             <h4>My Account</h4>
-            <a href="login.html">Sign in</a>
-            <a href="cart.html">View Cart</a>
+            <a href="login.php">Sign in</a>
+            <a href="cart.php">View Cart</a>
             <a href="#">My Wishlist</a>
             <a href="#">Track My Order</a>
             <a href="#">Help</a>

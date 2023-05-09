@@ -26,21 +26,21 @@
 
 <body>
     <section id="header">
-        <a href="index.html"><img src="IMG/logop.jpeg" class="logo"></a>
+        <a href="index.php"><img src="IMG/logop.jpeg" class="logo"></a>
  
         <div>
             <ul id="navbar">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="shop.html">Shop</a></li>
-                <li><a class="active" href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="login.html">Account</a></li>
-                <li id="shopping-bag"><a href="cart.html"><i class="fa fa-shopping-bag" aria-hidden="true"></i></a></li>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="shop.php">Shop</a></li>
+                <li><a class="active" href="about.php">About</a></li>
+                <li><a href="contact.php">Contact</a></li>
+                <li><a href="login.php">Account</a></li>
+                <li id="shopping-bag"><a href="cart.php"><i class="fa fa-shopping-bag" aria-hidden="true"></i></a></li>
                 <a href="#" id="close"><i class="far fa-times"></i></a>
             </ul>
         </div>
         <div id="mobile">
-            <a href="cart.html"><i class="fa fa-shopping-bag" aria-hidden="true"></i></a>
+            <a href="cart.php"><i class="fa fa-shopping-bag" aria-hidden="true"></i></a>
             <i id="bar" class="fas fa-outdent"></i>
         </div>
     </section>
